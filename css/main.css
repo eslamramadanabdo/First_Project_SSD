@@ -1,0 +1,663 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* body {
+    height: 4000px;
+} */
+
+/* =============start slider style */
+
+section {
+    margin-bottom: 50px;
+    background-color: black;
+    padding-bottom: 40px;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/dark1.jpg);
+    background-size: 100% 100%;
+    animation-name: changeBg;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changeBg {
+    25% {
+        background-image: url(../img/dark2.jpg);
+
+    }
+
+    50% {
+        background-image: url(../img/dark3.jpg);
+
+    }
+
+    75% {
+        background-image: url(../img/dark2.jpg);
+
+    }
+}
+
+.slider .navbar {
+    overflow: auto;
+    background-image: linear-gradient(172deg, black, white);
+}
+
+.slider .navbar ul {
+    list-style-type: none;
+}
+
+.slider .navbar ul li {
+    float: left;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.slider .navbar ul li a {
+    text-decoration: none;
+    color: rgba(177, 119, 216, 0.973);
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.slider .navbar ul li:hover,
+.slider .navbar ul li:hover span,
+.slider .navbar ul li:hover a {
+    background-color: white;
+    color: black;
+}
+
+.slider .navbar ul li a span {
+    color: rgb(18 255 231 / 97%);
+}
+
+.slider .navbar ul .floatRight {
+    float: right;
+}
+
+.slider .navbar ul li button {
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.slider .navbar ul li .btn1 {
+    background-color: transparent;
+    border: 1px solid blue;
+    color: blue;
+}
+
+.slider .navbar ul li .btn2 {
+    background-color: transparent;
+    border: 1px solid green;
+    color: green;
+}
+
+/* end navbar */
+.slider .layout {
+    width: 100%;
+    height: 90vh;
+    /* background-color: red; */
+    position: relative;
+    text-align: center;
+}
+
+.slider .layout .layout-content {
+    position: absolute;
+    bottom: 3%;
+    left: 30%;
+}
+
+.slider .layout .layout-content h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    text-shadow: 10px 10px 10px white;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.slider .layout .layout-content p {
+    font-size: 15px;
+    /* font-weight: bold; */
+    padding: 10px 0px;
+    margin: 10px 0px;
+    text-shadow: 10px 10px 10px white;
+    color: white;
+    letter-spacing: 5px;
+}
+
+/*===============end slider style */
+
+
+/* start slider media style */
+/* for laptop */
+@media(min-width: 950px) {
+
+    /* .slider .navbar ul li a{
+        font-size: 20px;
+    } */
+    .slider .layout .layout-content {
+        left: 20%;
+    }
+}
+
+/* for tablet */
+@media(min-width: 750px) {
+    .slider .navbar ul li a {
+        font-size: 15px;
+    }
+
+    .slider .layout .layout-content {
+        left: 10%;
+    }
+}
+
+/* for mobile */
+@media (max-width: 600px) {
+    .slider .navbar ul li a {
+        font-size: 18px;
+    }
+
+    .slider .navbar ul li {
+        float: none;
+    }
+
+    .slider .navbar ul .floatRight {
+        float: left;
+        margin: 5px 20px;
+    }
+
+    .slider .navbar {
+        display: none;
+        background-image: linear-gradient(143deg, black, white);
+    }
+
+    .slider .layout .layout-content {
+        left: 0%;
+    }
+
+    .slider .layout .layout-content h1 {
+        font-size: 20px;
+    }
+
+    .slider .layout .layout-content p {
+        font-size: 12px;
+    }
+}
+
+/* end slider media style */
+
+
+
+/* ==========start  about us style============= */
+
+.about {
+    height: auto;
+}
+
+.about .about-head {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(177, 119, 216, 0.973);
+    padding: 5px 0px;
+}
+
+.about .hr1 {
+    width: 60%;
+    margin: 5px auto;
+    background-image: linear-gradient(to right, rgba(177, 119, 216, 0.973), white, rgba(177, 119, 216, 0.973));
+    height: 10px;
+    border-radius: 50%;
+}
+
+.about .hr2 {
+    width: 50%;
+    margin: 10px auto;
+    border-radius: 50%;
+    border-top: 5px dashed rgba(177, 119, 216, 0.973);
+
+}
+
+.about .hr3 {
+    width: 40%;
+    margin: 10px auto;
+    border-radius: 50%;
+    border-top: 5px dashed rgba(177, 119, 216, 0.973);
+
+}
+
+.about .content {
+    display: flex;
+    /* padding-bottom: 100px; */
+}
+
+.about .content .content1 {
+    margin: 10px;
+    width: 40%;
+    height: 500px;
+    background-color: red;
+}
+
+.about .content .content1 .image {
+    width: 100%;
+    height: 100%;
+}
+
+.about .content .content1 .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.about .content .content2 {
+    /* background-color: blue; */
+    width: 60%;
+    height: 500px;
+    margin: 10px;
+}
+
+.about .content .content2 .content2-div {
+    text-align: center;
+    /* background-color: green; */
+    margin: 20px 20px;
+    padding: 10px;
+}
+
+.about .content .content2 .content2-div h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(177, 119, 216, 0.973);
+}
+
+.about .content .content2 .content2-div p {
+    font-size: 16px;
+    /* font-weight: bold; */
+    color: white;
+}
+
+/* ==========end  about us style============= */
+
+/* ======start about media style========== */
+
+/* for laptop */
+@media(min-width: 950px) {}
+
+/* for tablet */
+@media(min-width: 750px) {
+
+    .about .about-head {
+        font-size: 40px;
+    }
+
+    .about .content .content1 {
+        background-color: transparent;
+    }
+
+    .about .content .content1 .image {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .about .content .content1 .image img {
+        width: 90%;
+        height: 80%;
+    }
+
+    .about .hr1 {
+        width: 50%;
+        height: 4px;
+
+    }
+
+    .about .hr2 {
+        width: 40%;
+        border-top: 2px dashed rgba(177, 119, 216, 0.973);
+
+    }
+
+    .about .hr3 {
+        width: 30%;
+        border-top: 2px dashed rgba(177, 119, 216, 0.973);
+
+    }
+
+    .about .content .content2 .content2-div h1 {
+        font-size: 30px;
+    }
+
+    .about .content .content2 .content2-div p {
+        font-size: 13px;
+    }
+}
+
+/* for mobile */
+@media (max-width: 600px) {
+    .about {
+        padding: 1px;
+    }
+
+    .about .about-head {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    .about .hr1 {
+        width: 35%;
+        height: 3px;
+
+    }
+
+    .about .hr2 {
+        width: 30%;
+        border-top: 2px dashed rgba(177, 119, 216, 0.973);
+
+    }
+
+    .about .hr3 {
+        width: 25%;
+        border-top: 2px dashed rgba(177, 119, 216, 0.973);
+
+    }
+
+    .about .content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about .content .content1 {
+        width: 80%;
+        height: 210px;
+        background-color: transparent;
+
+    }
+
+    .about .content .content {
+        width: 80%;
+    }
+
+    .about .content .content1 .image {
+        text-align: center;
+        margin-top: 40px;
+
+    }
+
+    .about .content .content1 .image img {
+        width: 77%;
+        height: 100%;
+    }
+
+    .about .content .content2 .content2-div {
+        padding: 10px 0px;
+        width: 100%;
+    }
+
+    .about .content .content2 .content2-div h1 {
+        font-size: 30px;
+    }
+
+    .about .content .content2 .content2-div p {
+        font-size: 12px;
+    }
+
+    .about .content {
+        padding-bottom: 60px;
+    }
+}
+
+/* ======end about media style========== */
+
+
+
+/* =============start Gallary style============== */
+
+/* ==========start  about us style============= */
+
+.gallary {
+    height: auto;
+}
+
+.gallary .gallary-head {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(177, 119, 216, 0.973);
+    padding: 5px 0px;
+}
+
+.gallary .hr1 {
+    width: 60%;
+    margin: 5px auto;
+    background-image: linear-gradient(to right, rgba(177, 119, 216, 0.973), white, rgba(177, 119, 216, 0.973));
+    height: 10px;
+    border-radius: 50%;
+}
+
+.gallary .hr2 {
+    width: 50%;
+    margin: 10px auto;
+    border-radius: 50%;
+    border-top: 5px dashed rgba(177, 119, 216, 0.973);
+
+}
+
+.gallary .hr3 {
+    width: 40%;
+    margin: 10px auto;
+    border-radius: 50%;
+    border-top: 5px dashed rgba(177, 119, 216, 0.973);
+
+}
+
+.gallary .gallary-content {
+    width: 80%;
+    margin: auto;
+    /* background-color:red ;     */
+}
+
+.gallary .gallary-content .header {
+    border-bottom: 1px solid white;
+}
+
+.gallary .gallary-content .header table {
+
+    width: 100%;
+    width: 100%;
+}
+
+.gallary .gallary-content .header table tr th {
+    padding: 5px 10px;
+    margin: 10px;
+
+}
+
+.gallary .gallary-content .header table tr th span {
+    background-color: aqua;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 10px;
+    color: black;
+    border-radius: 20px;
+
+}
+
+.gallary .gallary-content .gallary-content1 {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallary .gallary-content .gallary-content1 .image {
+    width: 30%;
+    margin: 10px;
+    box-shadow: 10px 10px 10px white;
+    border: 2px solid white;
+    border-radius: 20px;
+    /* overflow: hidden; */
+    position: relative;
+
+}
+
+
+.gallary .gallary-content .gallary-content1 .image .caption {
+    height: 80%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    position: absolute;
+    transition: all 1s;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+
+    transform: scale(0, 0);
+    top: 0%;
+
+
+}
+
+.gallary .gallary-content .gallary-content1 .image .caption h1 {
+    margin: 20px 5px;
+
+}
+
+
+.gallary .gallary-content .gallary-content1 .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.gallary .gallary-content .gallary-content1 .image:hover .caption {
+    transform: scale(1, 1);
+}
+
+/* =============end Gallary style============== */
+
+/* =============start media Gallary style============== */
+
+/* for labtop */
+/* @media (min-width: 750px){
+
+} */
+
+/* for tablet */
+@media (max-width: 770px) {
+    .gallary .gallary-content .gallary-content1 .image {
+        width: 40%;
+        margin-top: 50px;
+    }
+
+    .gallary {
+        padding: 1px;
+    }
+
+    .gallary .gallary-head {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    .gallary .hr1 {
+        width: 35%;
+        height: 3px;
+
+    }
+
+    .gallary .hr2 {
+        width: 30%;
+        border-top: 2px dashed rgba(177, 119, 216, 0.973);
+
+    }
+
+    .gallary .hr3 {
+        width: 25%;
+        border-top: 2px dashed rgba(177, 119, 216, 0.973);
+
+    }
+}
+
+
+/* for tablet */
+@media (max-width: 600px) {
+
+    .gallary {
+        padding: 1px;
+    }
+
+    .gallary .gallary-head {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    .gallary .hr1 {
+        width: 35%;
+        height: 3px;
+
+    }
+
+    .gallary .hr2 {
+        width: 30%;
+        border-top: 2px dashed rgba(177, 119, 216, 0.973);
+
+    }
+
+    .gallary .hr3 {
+        width: 25%;
+        border-top: 2px dashed rgba(177, 119, 216, 0.973);
+
+    }
+
+    .gallary .gallary-content .gallary-content1 .image {
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .gallary .gallary-content .header table tr th {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .gallary .gallary-content .header table tr th span {
+
+        font-size: 14px;
+        margin: 0px;
+
+    }
+}
+
+/* =============end media Gallary style============== */
+
+
+
+/*===========start contact us  style */
+
+.contact h1 {
+    /* text-align: center; */
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(177, 119, 216, 0.973);
+    padding: 5px 0px;
+}
+
+.contact .hr1 {
+    width: 60%;
+    margin: 5px auto;
+    background-image: linear-gradient(to right, rgba(177, 119, 216, 0.973), white, rgba(177, 119, 216, 0.973));
+    height: 10px;
+    border-radius: 50%;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*===========start contact us  style */
